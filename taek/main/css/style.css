@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    margin:0 auto;
+    color:#3f464d;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+    position: relative;
+}
+
+/* a 태그 초기화 */
+a{
+    all : unset;
+}
+a:link{
+    text-decoration: none;
+    color:#3f464d;
+}
+a:visited{
+    text-decoration: none;
+    color:#3f464d;
+}
+a:active{
+    text-decoration: none;
+    color:#3f464d;
+}
+a:hover{
+    text-decoration: none;
+    color:#3f464d;
+}
+li a:hover{
+    cursor:pointer;
+}
+
+.inner {
+    width:100%;
+    height:100%;
+    margin : 0 auto;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+/*리스트 초기화 및 flexbox 설정*/
+ul{
+    display:flex;
+    list-style: none;
+    padding:1rem 0;
+    margin:0;
+    
+}
+
+/*---------------------------------------------------------- 공통 */
+.quick-navigation{
+
+    border-radius: 10px;
+    bottom : 30px;
+    right: 10px;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+header{
+    width : 100%;
+    height : 185px;
+    background : #fff;
+    /*스크롤 처리안되게*/
+    /*position:fixed;*/
+}
+#logo{
+    width: 110px;
+    height: 90px;
+}
+.logo-sec{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+.head-container{
+    width:100%;
+    height : 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-container2{
+    margin-top : 0.5rem;
+    width:100%;
+    height : 20px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header .head-container2 div{
+    padding: 0 0.5rem;
+}
+
+#header .head-container2 .head-brand{
+    font-size: 0.8rem;
+    border-right: 1px solid #D8D8D8;
+}
+#header .head-container2 .head-brand a:hover{
+  color:#2186c4;
+  cursor:pointer;
+}
+
+#header .head-container2 .head-blog{
+    font-size: 0.8rem;
+}
+#header .head-container2 .head-blog a:hover{
+    color:#2186c4;
+    cursor:pointer;
+}
+#header .head-container2 .head-custom-center{
+    border-left: 1px solid #D8D8D8;
+    font-size: 0.8rem;
+}
+#header .head-container2 .head-custom-center a{
+    color : #5F0080;
+}
+
+#header .head-container2 .head-custom-center a:hover{
+    color:#2186c4;
+    cursor:pointer;
+}
+
+
+#header .head-container3 {
+    margin-top : 0.5rem;
+    width:100%;
+    height : 50px;
+    display:flex;
+    justify-content: space-between;
+}
+#header .head-container3 > .input-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column-reverse;
+   position: relative;
+}
+#header .head-container3 > .input-container .icon{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+  }
+
+#header .head-container3 > .input-container input{
+    height: 30px;
+    width: 242px;
+    border: 1px solid #f7f7f6;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    color: #666;
+    line-height: 16px;
+    outline: none;
+ }
+
+#header .head-container3 .menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .head-container3 .menu-container > .header-list{
+    display : flex;
+    width:100%;
+    height: 100%;
+    align-content: center;
+    justify-content: space-around;
+}
+#header .head-container3 .menu-container > .header-list li{
+    margin-left: 6rem;
+}
+
+section{
+    width:100%;
+    height:100%;
+    background : #fff;
+    /* section안에서 absoulte를 주기위해 상위 요소를 relative로 준다. */
+
+}
+.image-sec{
+    height : 360px;
+    background-image : url("../img/salad-2068220_640.jpg");
+    background-size : 100%;
+    background-position: center 30%;
+    background-repeat : no-repeat;
+}
+.image-container{
+    width:100%;
+    height:100%;
+    background : rgb(670,100,150);
+    /*투명도*/
+    opacity: 0.2;
+}
+/*----------------------------------------------------------------------*/
+
+#main .main-container{
+    width:100%;
+    margin-top : 2rem;
+}
+
+#main .nav-food{
+    margin-bottom: 2rem;
+}
+
+
+
+.recipe-title-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-title{
+    font-size : 1.3rem;
+    font-weight: bold;
+    color : #545e6f;
+}
+#main .food-list{
+    justify-content: center;
+}
+
+.food-card{
+    width:240px;
+    box-shadow: 10px 10px 10px -5px rgba(25,42,70,0.2);
+    border-radius: 8px;
+    margin: 0 20px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+.food-card:hover{
+    box-shadow: 10px 10px 10px 0px rgba(25,42,70,0.2);
+    transform : translate(0,-5px);
+}
+.food-image{
+    /*부모 클래스인 food-card 사이즈의 100%*/
+    max-width:240px;
+    border-radius: 8px 8px 0 0;
+   
+}
+.food-container{
+    width:100%;
+    padding:0.5rem 0.5rem 1rem 1rem;
+}
+.food-skill{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.food-type{
+    font-size:0.9rem;
+    color : #949393;
+}
+.food-format{
+    font-size:0.9rem;
+    color : #fff;
+    background : #0d47a1;
+    padding : 0.2rem;
+}
+.food-desc{
+    width:100%;
+    margin-top : 0.2rem;
+}
+.food-title{
+    font-weight: bold;
+    color : #545e6f;
+    width:100%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom : 0.5rem;
+}
+.food-detail{
+    font-size : 0.9rem;
+    color : #545e6f;
+    line-height: 1.5rem;
+}
+.roadmap-desc{
+    display:visible;
+}
+
+/********************************/
+footer{
+    border-top : 1px solid #e4e4e4;
+    background : #f8f9fa;
+    padding : 1rem 0;
+    margin : 1rem 0;
+}
+
+.footer-message{
+    font-weight: bold;
+    margin: 0.3rem 0.5rem;
+    color : #545e6f;
+}
+.footer-contact{
+    margin: 0 0.5rem;
+    color : #545e6f;
+}
+.footer-copyright{
+
+    color : #545e6f;
+    margin : 1rem 0.5rem;
+}
+
+@media only screen and (min-width:1200px){
+    .inner {
+        max-width: 1200px;
+    }
+}
+@media only screen and (max-width:980px){
+    .main-container {
+        display : none;
+    }
+
+}
