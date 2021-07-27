@@ -38,3 +38,4 @@
 # 21/07/27
 - 레시피 오픈 API 사용 신청 
 - 식품 영양성문 DB 다운로드 
+- https://www.foodsafetykorea.go.kr/api/datasetList.do?cl_cd=API_SRT03&menu_grp=MENU_GRP31&menu_no=17881
