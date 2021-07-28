@@ -39,3 +39,6 @@
 - 레시피 오픈 API 사용 신청 
 - 식품 영양성문 DB 다운로드 
 - https://www.foodsafetykorea.go.kr/api/datasetList.do?cl_cd=API_SRT03&menu_grp=MENU_GRP31&menu_no=17881
+
+# 21/07/28
+- iamport로 결제 시스템 사용 방법 학습
