@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<link type="text/css" rel="stylesheet" href="/resource/css/common.css">
+</head>
+<body>
+
+<h3>체크박스</h3>
+<form action="/checkbox/checkbox" method="post">
+	<input type="checkbox" name="recipe" value="라면"> 라면 
+	<input type="checkbox" name="recipe" value="피자"> 피자
+	<input type="checkbox" name="recipe" value="파닭"> 파닭
+	<input type="checkbox" name="recipe" value="네네치킨"> 네네치킨 
+	<input type="submit"> 	 
+</form>
+
+
+</body>
+</html>
