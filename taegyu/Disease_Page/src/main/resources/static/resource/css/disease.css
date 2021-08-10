@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.img-fluid.mb-2 {
+	width : 250px;
+	height : 250px;
+	Margin : 5px 5px 5px 5px;
+	position : relative;
+}
+
+
+/* 시도 */
+.container {
+	padding: 3px 3px 3px 3px; 
+	position: relative; 
+	width: 90%; 
+	display: flex; 
+	flex-wrap: wrap; 
+	height: 400px;
+}
+	
+.container content {
+    position: relative;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+}
+  
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+  
+figure .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color: #fff;
+    background: rgba(95, 75, 140, 0.5);
+        -webkit-transition: .6s ease;
+        transition: .6s ease;
+}
+
+figure .overlay .description {
+    font-size: 40px;
+    color : #ffffff;
+    position: absolute;
+    font-weight : bold;
+    text-shadow: -5px 0 5px black, 0 5px 5px black, 5px 0 5px black, 0 -5px 5px black;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+figure:hover .overlay {
+    display: block;
+    height: 100%;
+}
+
+.itemSpace {
+	width : 50px;
+	height : auto;
+}
+
+/* table css */
+
+table.exampleDisease {
+	margin-left : auto;
+	margin-right : auto;
+	width : 80%;
+	min-width : 700px;
+	height : 300px;
+	border-collapse: collapse;
+	line-height: 1.5;
+}
+
+table.exampleDisease thead th {
+	padding: 10px;
+	font-weight: bold;
+	font-size : xx-large;
+	vertical-align: top;
+	color: rgb(16,76,130);	
+	border-bottom: 3px solid #000040;
+}
+
+table.exampleDisease tbody th {
+	padding: 10px;
+	font-weight: bold;
+	border-bottom: 3px solid #ccc;
+	background: #f3f6f7;
+}
+
+table.exampleDisease td {
+	padding: 10px;
+	border-bottom: 2px solid #ccc;
+}
+
+.disease-info {
+	vertical-align : top;
+	width : 50%;
+	font-size: x-large;
+
+}
+
+table.exampleFood {
+	margin-left : auto;
+	margin-right : auto;
+	width : 80%;
+	min-width : 700px;
+	height : 200px;
+	border-collapse: separate;
+  	border-spacing: 10px;
+  	line-height: 2;
+}
+  
+.help {
+	padding: 10px;
+	font-weight: bolder;
+	font-size : xx-large;
+	vertical-align: top;
+	color: #0000ff;
+	border-bottom: 1px solid #ccc;
+}
+
+.escape {
+	padding: 10px;
+	font-weight: bold;
+	font-size : xx-large;
+	vertical-align: top;
+	color: #ff0000;
+	border-bottom: 1px solid #ccc;
+}
+
+table.exampleFood td {
+ 	padding: 10px;
+  	vertical-align: top;
+}
+
+.food-info {
+	vertical-align : top;
+	width : 50%
+}
+
+.helpFood {
+	color: #0000ff;
+	font-weight: bolder;
+	font-size : x-large;
+}
+
+.escapeFood {
+	color: #ff0000;
+	font-weight: bolder;
+	font-size : x-large;
+}
+
+h1 {
+	text-align: center;
+}
+
+.exampleImg {
+	width : 350px;
+	height : 350px;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+
+
+
