@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
+/* diseaseInfo css */
 *, ::after, ::before {
-    box-sizing: border-box;
+    box-sizing : border-box;
 }
 
 .img-fluid.mb-2 {
@@ -14,66 +15,69 @@
 
 /* 시도 */
 .container {
-	padding: 3px 3px 3px 3px; 
-	position: relative; 
-	width: 90%; 
-	display: flex; 
-	flex-wrap: wrap; 
-	height: 400px;
+	padding : 3px 3px 3px 3px; 
+	position : relative; 
+	width : 90%; 
+	display : flex; 
+	flex-wrap : wrap; 
+	height : auto;
 }
 	
 .container content {
-    position: relative;
+    position : relative;
 }
 
 figure {
-    width: 100%;
-    position: relative;
+    width : 100%;
+    position : relative;
 }
   
 figure img {
-    display: block;
-    width: 100%;
-    height: auto;
+    display : block;
+    width : 100%;
+    height : auto;
 } 
   
 figure .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    color: #fff;
-    background: rgba(95, 75, 140, 0.5);
-        -webkit-transition: .6s ease;
-        transition: .6s ease;
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    overflow : hidden;
+    width : 100%;
+    height : 0;
+    color : #fff;
+    background : rgba(95, 75, 140, 0.5);
+        -webkit-transition : .6s ease;
+        transition : .6s ease;
 }
 
 figure .overlay .description {
-    font-size: 40px;
+    font-size : 40px;
     color : #ffffff;
-    position: absolute;
+    position : absolute;
     font-weight : bold;
-    text-shadow: -5px 0 5px black, 0 5px 5px black, 5px 0 5px black, 0 -5px 5px black;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    text-shadow : -5px 0 5px black, 0 5px 5px black, 5px 0 5px black, 0 -5px 5px black;
+    top : 50%;
+    left : 50%;
+    -webkit-transform : translate(-50%, -50%);
+    -ms-transform : translate(-50%, -50%);
+    transform : translate(-50%, -50%);
+    text-align : center;
 }
   
 figure:hover .overlay {
-    display: block;
-    height: 100%;
+    display : block;
+    height : 100%;
 }
 
 .itemSpace {
 	width : 50px;
 	height : auto;
 }
+
+
+
 
 /* table css */
 
@@ -83,37 +87,36 @@ table.exampleDisease {
 	width : 80%;
 	min-width : 700px;
 	height : 300px;
-	border-collapse: collapse;
-	line-height: 1.5;
+	border-collapse : collapse;
+	line-height : 1.8;
 }
 
 table.exampleDisease thead th {
-	padding: 10px;
-	font-weight: bold;
+	padding : 10px;
+	font-weight : bold;
 	font-size : xx-large;
-	vertical-align: top;
-	color: rgb(16,76,130);	
-	border-bottom: 3px solid #000040;
+	vertical-align : top;
+	color : rgb(16,76,130);	
+	border : 3px solid #808080;
 }
 
 table.exampleDisease tbody th {
-	padding: 10px;
-	font-weight: bold;
-	border-bottom: 3px solid #ccc;
-	background: #f3f6f7;
+	padding : 10px;
+	font-weight : bold;
 }
 
 table.exampleDisease td {
-	padding: 10px;
-	border-bottom: 2px solid #ccc;
+	padding : 10px;
+	border : 3px solid #808080;
 }
 
 .disease-info {
 	vertical-align : top;
 	width : 50%;
-	font-size: x-large;
-
+	font-size : x-large;
 }
+
+
 
 table.exampleFood {
 	margin-left : auto;
@@ -121,32 +124,32 @@ table.exampleFood {
 	width : 80%;
 	min-width : 700px;
 	height : 200px;
-	border-collapse: separate;
-  	border-spacing: 10px;
-  	line-height: 2;
+	border-collapse : separate;
+  	border-spacing : 20px;
+  	line-height : 2;
 }
   
 .help {
-	padding: 10px;
-	font-weight: bolder;
+	padding : 10px;
+	font-weight : bolder;
 	font-size : xx-large;
-	vertical-align: top;
-	color: #0000ff;
-	border-bottom: 1px solid #ccc;
+	vertical-align : top;
+	color : #0000ff;
+	border-bottom : 3px solid rgb(0, 0, 255);
 }
 
 .escape {
-	padding: 10px;
-	font-weight: bold;
+	padding : 10px;
+	font-weight : bold;
 	font-size : xx-large;
-	vertical-align: top;
-	color: #ff0000;
-	border-bottom: 1px solid #ccc;
+	vertical-align : top;
+	color : #ff0000;
+	border-bottom : 3px solid rgb(255, 0, 0);
 }
 
 table.exampleFood td {
- 	padding: 10px;
-  	vertical-align: top;
+ 	padding : 10px;
+  	vertical-align : top;
 }
 
 .food-info {
@@ -156,19 +159,24 @@ table.exampleFood td {
 
 .helpFood {
 	color: #0000ff;
-	font-weight: bolder;
+	font-weight : bolder;
 	font-size : x-large;
 }
 
 .escapeFood {
-	color: #ff0000;
-	font-weight: bolder;
+	color : #ff0000;
+	font-weight : bolder;
 	font-size : x-large;
 }
 
 h1 {
-	text-align: center;
+	text-align : center;
 }
+
+
+
+
+/* 질병별 페이지 상단 이미지 css */
 
 .exampleImg {
 	width : 350px;
