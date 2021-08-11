@@ -1,6 +1,8 @@
 package com.work.controller;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
@@ -111,6 +113,30 @@ public class UserController {
 			model.addAttribute("message", "[회원정보수정실패] 회원 정보 수정 중 문제가 발생했습니다");
 			return "user/userInfo";
 		}
+	}
+	
+	@RequestMapping("/admin/userList")
+	public String userList(Model model, HttpSession session) {
+		List<User> list = new ArrayList<User>();
+		list =userService.userList();
+		model.addAttribute("list", list);
+		return "admin/userList";
+	}
+	
+	@RequestMapping("findIdForm")
+	public String findIdForm() {
+		return "user/findIdForm";
+	}
+	
+	@RequestMapping("findId")
+	public String findId(String phone, String userName, Model model) {
+		String userId = userService.findId(phone, userName);
+		if (userId == null) {
+			model.addAttribute("message", "입력한 정보로 찾을 수 있는 아이디가 없습니다.");
+			return "user/findIdForm";
+		}
+		model.addAttribute("message", "아이디: " + userId);
+		return "user/loginForm";
 	}
 
 }

@@ -22,6 +22,9 @@
 	<c:when test="${not empty dto}">
 		<a href="/user/logout">로그아웃</a>
 		<a href="/user/myPage">마이페이지</a>
+		<c:if test="${dto.loginType == 'A'}">
+			<a href="/admin/userList">전체회원목록</a>
+		</c:if>
 	</c:when>
 
 </c:choose>

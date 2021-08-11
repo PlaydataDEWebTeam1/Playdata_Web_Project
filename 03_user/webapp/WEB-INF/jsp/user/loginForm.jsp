@@ -17,7 +17,8 @@
 	<input type="password" name="userPw" required="required" placeholder="비밀번호" />
 	<input type="submit" value="로그인"/>
 </form>
-
+<a href="/findIdForm">아이디찾기</a>
+<a href="/findPwForm">비밀번호찾기</a>
 
 
 </body>

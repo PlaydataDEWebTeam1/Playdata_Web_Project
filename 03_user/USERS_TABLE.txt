@@ -3,7 +3,7 @@ USER_NO NUMBER(10) PRIMARY KEY,
 DISEASE_NO VARCHAR2(6),
 SUBSCRIBE_NO NUMBER(6),
 USER_ID VARCHAR2(50) UNIQUE ,
-USER_PASSWORD VARCHAR2(20) NOT NULL,
+USER_PW VARCHAR2(20) NOT NULL,
 LOGIN_TYPE VARCHAR2(10) NOT NULL,
 USER_NAME VARCHAR2(10) NOT NULL,
 PHONE VARCHAR2(13),
@@ -12,8 +12,8 @@ BIRTH VARCHAR2(10),
 HEIGHt VARCHAR2(3),
 WEIGHT VARCHAR2(3),
 SUBSCRIBE_YN VARCHAR2(1) default 'N',
-U_CREATE_DATE DATE default SYSDATE,
-U_LAST_UPDATE DATE
+ENTRY_DATE DATE default SYSDATE,
+LAST_UPDATE DATE
 );
 
 CREATE SEQUENCE SEQ_USERS_USER_NO
@@ -21,15 +21,20 @@ START WITH 1
 INCREMENT BY 1
 MAXVALUE 9999;
 
-insert into users(user_no, user_id, user_password, user_name, phone, email, disease_no, birth, height, weight)
-values(seq_users_user_no.nextval, 
-		'user01', 
-		'password01', 
-		'Hong', 
-		'010-1234-1000', 
-		'user0@work.com', 
-		01, 
-		'1990-01-01', 
-		'180', 
-		'80');
-	
+insert into users(user_no, login_type, user_id, user_pw, user_name, phone, email, disease_no, birth, height, weight)
+values(seq_users_user_no.nextval,'G','user04','password04','장보고','010-1234-4000','user04@work.com','04','1990-01-01','180',	'80');
+
+insert into users(user_no, login_type, user_id, user_pw, user_name, phone, email, disease_no, birth, height, weight)
+values(seq_users_user_no.nextval,'A','admin','admin1004','유관순','010-1234-0000','admin@work.com','00','1990-01-01','180','80');
+
+
+update users set u_last_update=SYSDATE, disease_no = '02', height = '170', weight = '70' where user_id = 'test01';
+
+
+
+01: 당뇨
+02: 간질환
+03: 심혈관질환
+04: 신장질환
+05: 뇌질환
+06: 암
