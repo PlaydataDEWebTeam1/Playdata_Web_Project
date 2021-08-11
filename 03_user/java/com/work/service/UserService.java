@@ -1,7 +1,11 @@
 package com.work.service;
 
+import java.awt.List;
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import com.work.dao.UserDao;
 import com.work.dto.User;
@@ -31,6 +35,15 @@ public class UserService {
 	public int updateUser(User dto) {
 		System.out.println("###### service 회원정보수정");
 		return userDao.updateUser(dto);
+	}
+
+	public ArrayList<User> userList() {
+		return userDao.selectAllUser();
+		
+	}
+	
+	public String findId(String phone, String userName) {
+		return userDao.selectUserId(phone, userName);
 	}
 
 }

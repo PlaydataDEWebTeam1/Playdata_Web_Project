@@ -1,5 +1,11 @@
 package com.work.dto;
 
+
+
+
+
+import java.util.Date;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,6 +29,6 @@ public class User {
 	private String height;
 	private String weight;
 	private String subscribeYn;
-	private String uCreateDate;
-	private String uLastUpdate;
+	private String entryDate;
+	private String lastUpdate;
 }

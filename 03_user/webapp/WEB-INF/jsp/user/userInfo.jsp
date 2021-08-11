@@ -43,23 +43,83 @@
 		<td>질환</td>
 		<td>
 			<c:choose>
-				<c:when test="${diseaseNo == null}">
+				<c:when test="${dto.diseaseNo == '00'}">
 					<select name="diseaseNo">
-						<option value="00">질병선택</option>
+						<option value="00">해당없음</option>
 						<option value="01">당뇨</option>
 						<option value="02">간질환</option>
-						<option value="03">심혈관질환</option>
+						<option value="03">심장질환</option>
 						<option value="04">신장질환</option>
 						<option value="05">뇌질환</option>
 						<option value="06">암</option>
 					</select>
 				</c:when>
-				<c:when test="${diseaseNo == '01'}">당뇨</c:when>
-				<c:when test="${diseaseNo == '02'}">간질환</c:when>
-				<c:when test="${diseaseNo == '03'}">심혈관질환</c:when>
-				<c:when test="${diseaseNo == '04'}">신장질환</c:when>
-				<c:when test="${diseaseNo == '05'}">뇌질환</c:when>
-				<c:when test="${diseaseNo == '06'}">암</c:when>
+				<c:when test="${dto.diseaseNo == '01'}">
+					<select name="diseaseNo">
+						<option value="01">당뇨</option>
+						<option value="02">간질환</option>
+						<option value="03">심장질환</option>
+						<option value="04">신장질환</option>
+						<option value="05">뇌질환</option>
+						<option value="06">암</option>
+						<option value="00">해당없음</option>
+					</select>
+				</c:when>
+				<c:when test="${dto.diseaseNo == '02'}">
+					<select name="diseaseNo">
+						<option value="02">간질환</option>
+						<option value="01">당뇨</option>
+						<option value="03">심장질환</option>
+						<option value="04">신장질환</option>
+						<option value="05">뇌질환</option>
+						<option value="06">암</option>
+						<option value="00">해당없음</option>
+					</select>
+				</c:when>
+				<c:when test="${dto.diseaseNo == '03'}">
+					<select name="diseaseNo">
+						<option value="03">심장질환</option>
+						<option value="01">당뇨</option>
+						<option value="02">간질환</option>
+						<option value="04">신장질환</option>
+						<option value="05">뇌질환</option>
+						<option value="06">암</option>
+						<option value="00">해당없음</option>
+					</select>
+				</c:when>
+				<c:when test="${dto.diseaseNo == '04'}">
+					<select name="diseaseNo">
+						<option value="04">신장질환</option>
+						<option value="01">당뇨</option>
+						<option value="02">간질환</option>
+						<option value="03">심장질환</option>
+						<option value="05">뇌질환</option>
+						<option value="06">암</option>
+						<option value="00">해당없음</option>
+					</select>
+				</c:when>
+				<c:when test="${dto.diseaseNo == '05'}">
+					<select name="diseaseNo">
+						<option value="05">뇌질환</option>
+						<option value="01">당뇨</option>
+						<option value="02">간질환</option>
+						<option value="03">심장질환</option>
+						<option value="04">신장질환</option>
+						<option value="06">암</option>
+						<option value="00">해당없음</option>
+					</select>
+				</c:when>
+				<c:when test="${dto.diseaseNo == '06'}">
+					<select name="diseaseNo">
+						<option value="06">암</option>
+						<option value="01">당뇨</option>
+						<option value="02">간질환</option>
+						<option value="03">심장질환</option>
+						<option value="04">신장질환</option>
+						<option value="05">뇌질환</option>
+						<option value="00">해당없음</option>
+					</select>
+				</c:when>
 			</c:choose>
 		</td>
 	</tr>

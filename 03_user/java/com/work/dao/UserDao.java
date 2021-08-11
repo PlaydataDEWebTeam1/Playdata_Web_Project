@@ -1,5 +1,6 @@
 package com.work.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -27,13 +28,19 @@ public interface UserDao {
 	/** 회원정보수정 */
 	public int updateUser(User dto);
 	
-
+	/** 전체회원조회 */
+	public ArrayList<User> selectAllUser();
 
 	/** 다중조건 검색 */
 	public List<User> selectuserListByCondition(String condition, String keyword);
 
 	/** 다중조건 조회 : 다중 아이디 조회: ArrayList */
 	public List<User> selectuserListByConditionToList(String condition, List<String> userIdList);
+	
+	/** 아이디 찾기*/
+	public String selectUserId(String phone, String userName);
+
+	
 
 	
 

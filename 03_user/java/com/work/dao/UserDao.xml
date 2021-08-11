@@ -31,10 +31,20 @@
 		birth=#{birth},
 		height=#{height},
 		weight=#{weight},
-		u_last_update=SYSDATE
+		last_update=SYSDATE
 		where
 		user_id=#{userId}
 	</update>
+	
+	<!-- public List<User> selectAllUser(); -->
+	<select id="selectAllUser" resultType="com.work.dto.User">
+		select * from users
+	</select>
+	
+	<!-- public String selectUserId(String phone, String userName); -->
+	<select id="selectUserId" resultType="String">
+		select user_id from users where user_name=#{userName} and phone = #{phone}
+	</select>
 	
 	<!--public List<User> selectUserList();-->
 	
