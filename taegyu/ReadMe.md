@@ -110,7 +110,19 @@
 	- 질환 이미지 클릭시 질환 페이지로 이동
 	- 대표 질환과 그에 대한 설명 테이블로 작성
 	- 좋은 음식, 나쁜 음식 3가지씩 테이블 내 ul로 작성	
+
+21.08.11
+- 좋아요 기능 구축을 위한 파일 생성 및 수정
+	- ajax_page.jsp -  리스트 페이지의 레시피의 좋아요와 레시피에 해당하는 모달창 좋아요 만들어지는 jsp
+	- pageOn.js - 페이지가 열리자마자 실행되는 javaScript
+	- like.js - like 클릭시 이벤트 처리 javaScript
+	- PictureController.java - saveLike.do , removeLike.do Mapping
+	- PictureLikeDao.java - 게시물의 like수를 +하거나 -하기 위한 메서드
+	- PictureTO.java
+	- PictureLikeTO.java
+	- PictureLikeDao.xml - SQL DB Mapping
 	
+- 질환별 페이지의 테이블 모양 수정
 	
 	
 	
