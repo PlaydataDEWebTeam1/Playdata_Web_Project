@@ -1,0 +1,64 @@
+# style.css 수정부분
+
+## main. food-container 다음 부분에 추가 
+
+figure {
+    width : 270px;
+    position : relative;
+}
+
+figure .overlay {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    overflow : hidden;
+    width : 270px;
+    height : 0;
+    color : #fff;
+    background : rgba(168, 168, 168, 0.5);
+        -webkit-transition : .6s ease;
+        transition : .6s ease;
+}
+
+figure .overlay .description {
+    font-size : 25px;
+    color : #ffffff;
+    position : absolute;
+    font-weight : bold;
+    text-shadow : -5px 0 5px black, 0 5px 5px black, 5px 0 5px black, 0 -5px 5px black;
+    top : 50%;
+    left : 50%;
+    width : 270px;
+    -webkit-transform : translate(-50%, -50%);
+    -ms-transform : translate(-50%, -50%);
+    transform : translate(-50%, -50%);
+    text-align : center;
+}
+
+figure:hover .overlay {
+    display : block;
+    height : 100%;
+}
+
+## 맨 마지막 @media .inner width 사이즈 수정
+
+@media only screen and (min-width:1200px){
+    .inner {
+        max-width: 1500px;
+    }
+}
+
+## main.jsp 각 food-card별 추가 부분
+
+추가 			<figure>
+			<li class="food-card"><a href="/readView?bno=65"> 
+			<img src="../main_img/1.들깨 곤약냉체.png" alt="들깨 곤약냉채"
+				class="food-image">
+추가					<div class="overlay">
+추가		         		<div class="description">
+추가		         			들깨 곤약냉채
+추가		         		</div>
+추가		       		</div>
+			</a></li>
+추가			</figure>
