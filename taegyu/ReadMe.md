@@ -123,7 +123,10 @@
 	- PictureLikeDao.xml - SQL DB Mapping
 	
 - 질환별 페이지의 테이블 모양 수정
-	
+
+21.08.12
+- 좋아요 기능 Test 방법을 찾지 못해 Test 못함
+- 식단 DB Update
 	
 	
 	
