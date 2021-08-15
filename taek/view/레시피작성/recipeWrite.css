@@ -1,0 +1,182 @@
+@charset "UTF-8";
+#header {
+	border-bottom: 1px solid #e1e1e1 ;
+	box-shadow: 2px 2px 2px rgba(192,192,192, 0.6) ;
+}
+
+/*-------------------------------------------------------------------*/
+.recipe-register h1{
+	border-bottom: 2px solid #C3C4CE; 
+	padding-bottom: 10px;
+}
+
+
+.recipe-register .line.nutrient{
+	display: flex;
+	align-items: center;
+	width: 1400px;
+}
+
+.recipe-register .line.nutrient .kcal-na{
+	margin-left: 30px;	
+}
+
+.recipe-register .line.nutrient input[type="text"]{
+	margin-left: 8px;
+	border: none;
+	border: 1px solid #CCC;
+	font-size: 14px;
+	padding : 0 19px;
+	height: 34px;
+	border-radius: 7px; 
+	margin-right: 10px;
+}
+
+/*레피시 제목*/
+.recipe-register>form>div:nth-child(odd){
+	margin-bottom: 40px;
+}
+.recipe-register>form>div:nth-child(even){
+	margin-bottom: 40px;
+}
+.line.title input[type=text]{
+	margin-left: 20px;
+	border: none;
+	border: 1px solid #CCC;
+	font-size: 14px;
+	padding : 0 19px;
+	height: 54px;
+	border-radius: 7px; 
+	width: 500px;
+
+}
+
+/*요리소개*/
+.line.description{
+	position: relative;
+}
+.line.description span{
+	position: absolute;
+	top: 0;	
+}
+.line.description textarea {
+	margin-left: 100px;
+	border: 1px solid #CCC;
+	resize: none;
+	border-radius: 7px;
+}
+
+/*재료*/
+.line.ingredient input[type=text]{
+	margin-left: 60px;
+	border: none;
+	border: 1px solid #CCC;
+	font-size: 14px;
+	padding : 0 25px;
+	height: 54px;
+	border-radius: 7px;
+	width: 500px;
+	color:#CCC;
+	font-size: 14px;
+	font-weight: 500;
+}
+/*요리순서*/
+.line.step{
+	position: relative;
+}
+.line.step span{
+	display: inline-block;
+	position: absolute;
+	top : 0;
+}
+.line.step textarea{
+	margin-left: 90px;
+	border: 1px solid #CCC;
+	border-radius: 7px;
+	resize: none;
+}
+
+textarea::placeholder{
+	color:#CCC;
+	font-size: 14px;
+	font-weight: 500;
+	padding-left: 10px;
+	padding-top : 10px;
+}
+input[type="text"]::placeholder{
+	color:#CCC;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/*버튼*/
+.button-box{
+	margin-left: 250px;
+}
+
+
+#main .button-box button{
+	width: 328px;
+	height: 54px;
+	background: #D3E73E;
+	border: none;
+	color : #4C4C6D;
+	margin-right : 10px;
+}
+
+#main .button-box button:hover{
+	background: #C6D93A;
+	cursor: pointer;
+}
+
+/*취소 버튼 */
+#main .cancel-box .cancel-button{
+	width: 328px;
+	height: 54px;
+	background: #fff;
+	border: 1px solid #B6CECA;
+	color : #B6CECA;
+}
+
+#main .cancel-box .cancel-button:hover{
+	background: #F2F2F2;
+	cursor: pointer;
+}
+
+/* 가입하기,취소버튼 박스*/
+#main .button-box{
+	float : left;
+	border-top : 1px solid #e1e1e1;
+	padding-top : 20px;
+	padding-left : 100px;
+}
+
+/*취소버튼*/
+#main .cancel-box{
+	display:inline-block;
+	padding-top : 20px;
+	border-top : 1px solid #e1e1e1;
+	width:400px;
+}
+
+/*파일 입출력*/
+.file-trigger-button{
+	background: #C6D93A;
+	border : 1px solid C6D93A;
+	border-radius: 5px;
+	padding : 5px 10px;
+	color : white;
+	cursor : pointer;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.file-button{
+	display : none;
+}
+.line.nutrient input[type=text]::placeholder{
+	text-align: right;
+}
+
+
+
