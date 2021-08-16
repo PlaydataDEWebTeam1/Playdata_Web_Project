@@ -564,7 +564,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
 
      
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '애호박새우전',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '애호박새우전',
      '애호박은 소화기계통을 보호하고 기운을 더해준다고 합니다.',
      '1.애호박은 1cm 두께로 썬 뒤 병뚜껑을 이용해 중앙의 속 씨를 제거하고, 고추는 길게 반 갈라 송송 썬다.'||'<br><br>'||
      '2.믹서에 새우살과 밑간 재료를 넣고 갈아 섞는다.'||'<br><br>'||
@@ -577,7 +577,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
      '이택근');
      
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '옥수수완자전',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '옥수수완자전',
      '옥수수는 식이섬유소가 풍부해 변비 예방에 좋습니다.',
      '1.다진 돼지고기는 키친 타월에 감싸 핏물을 제거한다. 두부는 면포에 짜 물기를 제거한 뒤 칼등으로 곱게 으깨고, 옥수수는 알갱이만 분리하고, 당근, 부추, 양파는 잘게 다진다.'||'<br><br>'||
      '2.볼에 돼지고기와 손질한 재료, 고기 양념을 넣어 끈기있게 치댄다.'||'<br><br>'||
@@ -590,7 +590,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
      'kiyung');
 
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '들깨수제비',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '들깨수제비',
      '들깨에는 오메가-3 지방산 계열인 리놀렌산이 풍부하게 함유되어 있어 혈행개선, 혈압을 낮추고 면역력을 높이는 데 효과가 있습니다.',
      '1.냄비에 멸치, 다시마와 물을 넣어 끓어오르면 다시마를 건지고 중간불로 15분간 끓인 뒤 채에 거른다.'||'<br><br>'||
      '2.밀가루에 들깻가루를 섞은 뒤 물을 부어 치대어 10분간 숙성시킨다.'||'<br><br>'||
@@ -603,7 +603,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
      'kiyung');
 
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '연근블루베리피클',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '연근블루베리피클',
      '연근에는 비타민C와 비타민B 군이 풍부하게 들어있어 피로 회복과 각종 염증 완화, 눈의 충혈에 효과적이며, 피부를 윤택하게 해줍니다.',
      '1.연근은 감자칼로 껍질을 벗겨 0.3cm 두께로 납작 썬다.'||'<br><br>'||
      '2.물에 식초와 연근을 넣어 30초간 데친 뒤 찬물에 헹궈 채에 밭쳐 물기를 뺀다.'||'<br><br>'||
@@ -616,7 +616,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
      '이태규');
 
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '그린빈두부조림',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '그린빈두부조림',
      '그린빈은 열량은 낮고 비타민과 섬유소, 식물성 담백질이 풍부하게 함유되어 있으며 최중관리와 혈중 콜레스테롤 수치를 낮추는데 도움을 줍니다.',
      '1.그린빈은 양 가장자리를 제거한 뒤 끓는 물에 소금과 함께 넣고 10초간 데쳐 건진다.'||'<br><br>'||
      '2.두부는 4등분한 뒤 키친타월에 밭쳐 물기를 제거한 다음 전분가루를 고루 묻힌다.'||'<br><br>'||
@@ -629,7 +629,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
      '문수인');
 
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '기장 감자채전',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '기장 감자채전',
      '기장에는 비타민 A와 B가 풍부하고, 감자에는 비타민 C와 칼륨이 풍부합니다. ',
      '1.기장은 물에 불린 뒤 냄비에 물을 넣어 함께 10분간 끓인 뒤 채에 밭쳐 놓는다.'||'<br><br>'||
      '2.김치는 양념을 씻어 물기를 짠 뒤 양파와 곱게 채 썰고, 감자는 껍질을 제거해 얇게 채 썬다.'||'<br><br>'||
@@ -643,7 +643,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
 
      
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '소고기참나물겉절이',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '소고기참나물겉절이',
      '참나물은 베타카로틴의 함유량이 많아 체내의 노페물을 배출하고 콜레스테롤 수치를 낮춥니다.',
      '1.참나물은 5~6cm 길이로 썬다.'||'<br><br>'||
      '2.소고기는 간장, 다진 마늘, 참기름, 참깨 후춧가루를 넣어 양념한다.'||'<br><br>'||
@@ -656,7 +656,7 @@ INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS,
      '문수인');     
      
 INSERT INTO RECIPE_BOARD(BNO, TITLE, DESCRIPTION, CONTENT, DISEASE, INGREDIENTS, NUTRIENT, IMAGE_FILE, WRITER)
-     VALUES (MP_BOARD_SEQ.NEXTVAL, '율무밥크로켓',
+     VALUES (RECIPE_BOARD_SEQ.NEXTVAL, '율무밥크로켓',
      '율무에는 비타민 B1, B2, 철분 등이 많이 함유되어 있어 신진대사를 돕는 작용을 하며, 지방이 축적되는 것을 예방합니다.',
      '1.율무와 쌀은 씻은 뒤 물(2컵)을 붓고 밥을 짓는다. 피망과 양송이 버섯은 곱게 다진다.'||'<br><br>'||
      '2.다진 양송이 버섯은 식용유(1큰술)를 두른 팬에서 볶아 식힌다.'||'<br><br>'||
