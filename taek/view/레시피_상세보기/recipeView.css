@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+#header {
+	border-bottom: 1px solid #e1e1e1 ;
+	box-shadow: 2px 2px 2px rgba(192,192,192, 0.6) ;
+}
+
+/*-------------------------------------------------*/
+
+/* 작성자 */
+#main .author-content{
+	display: flex;
+	justify-content: space-between;
+	padding-left : 40px;
+	align-items: center;
+}
+
+/*레시피 제목*/
+.recipe-title{
+	margin : 0;
+	font-size: 30px;
+	font-weight: 500;
+	color : #5B646E;
+}
+/*이미지 + 영양소 박스*/
+#main .recipe-view{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+/*이미지*/
+#main .recipe-view img{
+	width: 500px;
+	height: 400px;
+	padding: 10px 30px 10px 30px;
+}
+
+/*영양성분*/
+#main .recipe-view .image-nut-content{
+	padding-top : 30px;
+	padding-bottom : 20px;
+	border-bottom: 1px solid #e1e1e1;
+}
+/*재료*/
+#main .recipe-view .ingredient{
+	padding-top : 20px;
+	padding-bottom : 20px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+/*순서*/
+#main .recipe-view .recipe-step{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	
+}
+.kcal{
+	font-size: 15px;
+	font-weight: 400;
+}
+.nut{
+	font-size: 22px;
+	font-weight : 500;
+	color : #6FAF7C;
+}
+
+/* 레시피 컨트롤 */
+.recipe-control{
+	display: flex;
+	justify-content: space-between;
+	align-items : center;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	border-top: 2px solid #e1e1e1;
+	border-bottom: 2px solid #e1e1e1;
+}
+.recipe-control .control-btn{
+	padding-left: 30px;
+}
+.control-btn span{
+	color : #5F5F5F;
+	font-size: 17px;
+	font-weight: 600;
+}
+.control-btn .date{
+	font-size : 14px;
+	font-weight: 200;
+}
+.recipe-control .author button{
+	margin-left: 10px;
+	width: 60px;
+	height: 33px;
+	background: #D3E73E;
+	color : #fff;
+	border: #D3E73E;
+	border-radius: 5px;
+}
+
+/*------------------------------------------------------*/
+#main .comment-tit{
+	padding: 30px;
+	padding-bottom : 15px;
+	padding-top : 80px;
+	border-bottom: 2px solid #e1e1e1;
+} 
+#main .comment-tit span:first-child{
+	font-size: 23px;
+	font-weight: 500;
+}
+#main .comment-tit .comment-count{
+	font-size: 23px;
+	font-weight: 400;
+	color : #E34830;
+}
+#main .comment-body{
+	padding-left : 30px;
+	padding-bottom: 30px;
+	padding-top : 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+#main .comment-head{
+	padding-bottom: 10px;
+}
+#main .comment-head > span ~ span{
+	display: inline-block;
+	color : #9D9F9E;
+	font-size: 14px;
+}
+#main .comment-head span:first-child{
+	color : #6FAF7C;
+	font-size: 18px;
+	font-weight: 400;
+	margin-right: 15px;
+}
+#main .comment-head span:nth-child(2){
+	color : #C5C6C6;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+#main .comment-content{
+	width: 900px;
+}
+#main .comment-head span:nth-child(2) ~ span:hover{
+	cursor : pointer;
+	color : #5AA1CC;
+}
+
+/*-----------------------------------------------*/
+
+#main .comment-write{
+	padding-left : 30px;
+	padding-top : 20px;
+}
+
+#main .comment-write textarea{
+	resize: none;	
+	float : left;
+	border: 1px solid #C5C6C6;
+}
+.comment-write .write-btn{
+	width: 100px;
+	height: 96px;
+	display: inline-block;
+}
+.comment-write .write-btn button{
+	width : 100%;
+	height: 100%;
+	border: 1px solid #C5C6C6;
+	background: #fff;
+	color : #595959;
+}
+.comment-write .write-btn button:hover{
+	background: #EBECEC;
+	cursor: pointer;
+}
+
+/*모달창*/
+.new-modal {
+	display:none;
+    width: 500px;
+    height : 220px;
+    padding: 20px 30px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.modal_close_btn {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-title{
+	display : block;
+	font-size: 23px;
+	padding-top: 20px;
+}
+.modal-input-box{
+	margin-top : 10px;
+}
+.modal-input{
+	padding : 20px 15px;
+	border: none;
+	border : 1px solid #AEAEAE;
+}
+.modal-input:hover{
+	border : 1px solid #8CABCF;	
+}
+
+.modal_para{
+    margin-top : 3rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#update-modal .modal_para{
+	margin-top :1rem;
+}
+
+.modal-fnc-btn{
+    width : 206px;
+    height : 55px;
+    background: #D3E73E;
+    color : #4C4C6D;
+    border : 1px #D9DBE1 solid;
+    cursor : pointer;
+    margin-right: 9px;
+}
+.modal-cancel-btn{
+	width : 206px;
+    height : 55px;
+    background: #fff;
+    color : #B6CECA;
+    border: 1px solid #B6CECA;
+    cursor : pointer;
+}
+.modal-fnc-btn:hover{
+	background: #C6D93A;
+	cursor: pointer;
+}
+.modal-cancel-btn:hover{
+	background: #F2F2F2;
+	cursor: pointer;
+
+}
+
+
+
+
+
+
+
