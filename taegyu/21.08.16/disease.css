@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/* diseaseInfo css */
+*, ::after, ::before {
+    box-sizing : border-box;
+}
+
+.img-fluid.mb-2 {
+	width : 250px;
+	height : 250px;
+	Margin : 5px 5px 5px 5px;
+	position : relative;
+}
+
+
+/* 시도 */
+.container {
+	padding : 3px 3px 3px 3px; 
+	position : relative; 
+	width : 90%; 
+	display : flex; 
+	flex-wrap : wrap; 
+	height : auto;
+}
+	
+.container content {
+    position : relative;
+}
+
+.overlay {
+    position : absolute; 
+    bottom : 0; 
+    background : rgb(0, 0, 0);
+    background : rgba(95, 75, 140, 0.5); /* Black see-through */
+    color : #f1f1f1; 
+    width : 100%;
+    transition : .5s ease;
+    overflow : hidden;
+    opacity : 0;
+    color : white;
+    font-size : 40px;
+    text-shadow : -5px 0 5px black, 0 5px 5px black, 5px 0 5px black, 0 -5px 5px black;
+    font-weight : bold;
+    padding : 20px;
+    text-align : center;
+    width : 250px;
+    z-index : 2;
+}
+
+content:hover .overlay {
+	display : block;
+    opacity: 1;
+}
+
+aside:hover .overlay {
+	display : block;
+    opacity: 1;
+}
+
+.itemSpace {
+	width : 50px;
+	height : auto;
+}
+
+
+
+
+/* table css */
+
+table.exampleDisease {
+	margin-left : auto;
+	margin-right : auto;
+	width : 80%;
+	min-width : 700px;
+	height : 300px;
+	border-collapse : collapse;
+	line-height : 1.8;
+}
+
+table.exampleDisease thead th {
+	padding : 10px;
+	font-weight : bold;
+	font-size : xx-large;
+	vertical-align : top;
+	color : rgb(16,76,130);	
+	border : 3px solid #808080;
+}
+
+table.exampleDisease tbody th {
+	padding : 10px;
+	font-weight : bold;
+}
+
+table.exampleDisease td {
+	padding : 10px;
+	border : 3px solid #808080;
+}
+
+.disease-info {
+	vertical-align : top;
+	width : 50%;
+	font-size : x-large;
+}
+
+
+
+table.exampleFood {
+	margin-left : auto;
+	margin-right : auto;
+	width : 80%;
+	min-width : 700px;
+	height : 200px;
+	border-collapse : separate;
+  	border-spacing : 20px;
+  	line-height : 2;
+}
+  
+.help {
+	padding : 10px;
+	font-weight : bolder;
+	font-size : xx-large;
+	vertical-align : top;
+	color : #0000ff;
+	border-bottom : 3px solid rgb(0, 0, 255);
+}
+
+.escape {
+	padding : 10px;
+	font-weight : bold;
+	font-size : xx-large;
+	vertical-align : top;
+	color : #ff0000;
+	border-bottom : 3px solid rgb(255, 0, 0);
+}
+
+table.exampleFood td {
+ 	padding : 10px;
+  	vertical-align : top;
+}
+
+.food-info {
+	vertical-align : top;
+	width : 50%
+}
+
+.helpFood {
+	color: #0000ff;
+	font-weight : bolder;
+	font-size : x-large;
+}
+
+.escapeFood {
+	color : #ff0000;
+	font-weight : bolder;
+	font-size : x-large;
+}
+
+h1 {
+	text-align : center;
+}
+
+
+
+
+/* 질병별 페이지 상단 이미지 css */
+
+.exampleImg {
+	width : 350px;
+	height : 350px;
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+
+
+
