@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.work.dto.User;
 import com.work.service.UserService;
@@ -81,11 +82,9 @@ public class UserController {
 	@RequestMapping("/user/delete")
 	public String deleteUser(String userId, String userPw, Model model, HttpSession session) {
 		int result = userService.deleteUser(userId);
-		System.out.println(result);
 		if (result == 1) {
 			Enumeration<String> attributes = session.getAttributeNames();
 			while(attributes.hasMoreElements()) {
-				System.out.println("hello");
 				String attribute = attributes.nextElement();
 				session.removeAttribute(attribute);
 			}
@@ -137,6 +136,28 @@ public class UserController {
 		}
 		model.addAttribute("message", "아이디: " + userId);
 		return "user/loginForm";
+	}
+	
+	@RequestMapping("findPwForm")
+	public String findPwForm() {
+		return "user/findPwForm";
+	}
+	
+	@RequestMapping("findPw")
+	public String findPw(String userId, String phone, String userName, Model model) {
+		String userPw = userService.findPw(userId, phone, userName);
+		if (userPw == null) {
+			model.addAttribute("message", "계정정보를 확인 후 다시 시도해주세요.");
+			return "user/findPwForm";
+		}
+		model.addAttribute("message", "비밀번호: " + userPw);
+		return "user/loginForm";
+	}
+	
+	@RequestMapping("/user/checkId")
+	@ResponseBody
+	public int checkId(String userId) {
+		return userService.checkId(userId);
 	}
 
 }
